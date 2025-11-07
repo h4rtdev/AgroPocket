@@ -1,0 +1,100 @@
+AgroPocket is a web-based system for agricultural data management, allowing full control of crops, inputs, harvests, and operation history.
+
+I want you to **update the entire visual design** of the AgroPocket project to a **modern dark theme** with **green and yellow accents**.
+
+⚙️ Main Features:
+- Full authentication system (login and register)
+- Responsive interface for mobile, tablet, and desktop
+- Data capture and validation in intuitive forms
+- Real-time dynamic data display
+- Data persistence using LocalStorage
+- Route protection and session persistence
+- Visual feedback for all user actions
+
+🔐 Authentication System:
+- Register with name, email, and password (min 6 chars)
+- Password confirmation and redirect between pages
+- Persistent session and secure logout
+
+📱 Responsive Design:
+- Mobile (<768px): hamburger menu, stacked cards, large touch buttons
+- Tablet (768–1024px): adaptive grid layout
+- Desktop (>1024px): full horizontal menu and multi-column view
+
+🧰 Technologies:
+Frontend:
+- React 18 + TypeScript + Vite + React Router DOM + TanStack Query
+
+UI/UX:
+- Tailwind CSS
+- shadcn/ui + Radix UI
+- Lucide React (icons)
+- Sonner (toasts)
+
+📂 Project Structure:
+agrodatahub/
+├── src/
+│   ├── components/
+│   │   ├── ui/              # shadcn/ui components
+│   │   ├── Layout.tsx       # Responsive layout
+│   │   └── ProtectedRoute.tsx # Route protection
+│   ├── lib/
+│   │   ├── auth.ts          # Authentication system
+│   │   ├── storage.ts       # Data persistence
+│   │   └── utils.ts         # Utilities
+│   ├── pages/
+│   │   ├── Auth.tsx         # Login and register
+│   │   ├── Dashboard.tsx    # Main page
+│   │   ├── Plantacoes.tsx   # Crop management
+│   │   ├── Insumos.tsx      # Inputs control
+│   │   ├── Colheitas.tsx    # Harvest registration
+│   │   ├── Historico.tsx    # Operation history
+│   │   └── Documentacao.tsx # Documentation
+│   ├── hooks/
+│   │   ├── use-toast.ts     # Toast notifications
+│   │   └── use-mobile.tsx   # Mobile detection
+│   ├── App.tsx              # Routes and protection
+│   └── index.css            # Global styles
+└── package.json             # Dependencies
+
+📈 Implemented Features:
+- Authentication: 100%
+- Responsiveness: 100%
+- Dashboard: 90%
+- Crops: 95%
+- Inputs: 95%
+- Harvests: 95%
+- History: 90%
+
+📋 User Guide:
+1. Access the system → click “Register” → enter name, email, password → confirm → log in
+2. Use top menu (desktop) or hamburger menu (mobile)
+3. Manage crops, inputs, and harvests
+4. View full operation history
+5. Logout through the user menu
+
+🎨 Visual Update:
+Redesign the interface using a **dark modern theme** with **green and yellow highlights**.
+
+**Style Requirements:**
+- Dark or black background
+- Green and yellow as primary accent colors
+- White or light gray main text
+- Buttons and links with hover animations
+- Smooth corners and soft shadows
+- Modern typography
+- Subtle transitions and hover effects
+- Clean and elegant dashboard
+
+**UI:**
+- Update Tailwind + shadcn/ui components
+- Adapt Sonner (toasts) to the new theme
+- Sidebar menu for mobile, top bar for desktop
+- Ensure full responsiveness and consistent design
+
+**Important:**
+- Don’t remove or break existing functionality
+- Only change visuals (colors, spacing, fonts, look)
+- Keep the code clean and modular
+
+The goal is to make AgroPocket **modern, elegant, and consistent**, using a **dark green & yellow theme**.
